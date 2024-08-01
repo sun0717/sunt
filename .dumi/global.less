@@ -1,0 +1,46 @@
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  
+    &-thumb {
+      background-color: rgba(0, 0, 0, 0.12);
+      border: 2px solid transparent;
+      border-radius: 8px;
+      background-clip: padding-box;
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.24);
+      }
+    }
+    &-track {
+      background-color: transparent;
+    }
+  }
+  
+  .dumi-default-doc-layout {
+    .dumi-default-header-content {
+      max-width: 2000px;
+    }
+  
+    > .dumi-default-doc-layout-mobile-bar + main {
+      max-width: 2000px;
+      // margin: unset;
+      .markdown {
+        font-size: 15px;
+      }
+    }
+  
+    .dumi-default-sidebar {
+      top: 76px;
+      width: 256px;
+      overflow: overlay;
+  
+      dl > dd {
+        padding: 6px 0;
+  
+        & > a {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+  
