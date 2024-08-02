@@ -1,0 +1,26 @@
+@prefix: 'sunt';
+@btnPrefix: ~'@{prefix}-btn';
+
+.@{btnPrefix} {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  min-height: 40px;
+  padding: 0 15px;
+  cursor: pointer;
+  transition: 0.2s linear;
+  color: #000;
+  border: 1px solid #000;
+
+  &-highlight {
+    background-color: #2980b9;
+    color: #fff;
+  }
+
+  &-disabled {
+    background-color: #fff;
+    color: #999;
+    border: 1px solid #999;
+  }
+}

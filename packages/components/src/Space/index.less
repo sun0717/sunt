@@ -1,0 +1,38 @@
+.space {
+  display: inline-flex;
+
+  &-vertical {
+    flex-direction: column;
+  }
+
+  &-align {
+    &-center {
+      align-items: center;
+    }
+
+    &-start {
+      align-items: flex-start;
+    }
+
+    &-end {
+      align-items: flex-end;
+    }
+
+    &-baseline {
+      align-items: baseline;
+    }
+  }
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background: pink;
+  border: 1px solid #000;
+}
+
+.container {
+  width: 300px;
+  height: 300px;
+  background: green;
+}
