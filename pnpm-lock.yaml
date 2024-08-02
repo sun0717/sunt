@@ -33,6 +33,9 @@ importers:
       classnames:
         specifier: ^2.5.1
         version: 2.5.1
+      dayjs:
+        specifier: ^1.11.12
+        version: 1.11.12
       dumi:
         specifier: ^2.3.0
         version: 2.4.7(@babel/core@7.24.9)(@swc/helpers@0.5.1)(@types/node@20.5.1)(@types/react@18.3.3)(eslint@8.57.0)(lightningcss@1.22.1)(prettier@2.8.8)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rollup@3.29.4)(stylelint@14.16.1)(terser@5.31.3)(type-fest@1.4.0)(typescript@5.3.3)(webpack@5.93.0(@swc/core@1.4.2(@swc/helpers@0.5.1)))

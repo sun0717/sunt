@@ -55,6 +55,7 @@
     "@types/react-dom": "^18.0.0",
     "@umijs/lint": "^4.0.0",
     "classnames": "^2.5.1",
+    "dayjs": "^1.11.12",
     "dumi": "^2.3.0",
     "eslint": "^8.23.0",
     "eslint-plugin-import": "^2.29.1",
