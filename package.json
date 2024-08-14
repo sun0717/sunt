@@ -55,6 +55,7 @@
     "@types/lodash-es": "^4.17.12",
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
+    "@types/react-transition-group": "^4.4.10",
     "@umijs/lint": "^4.0.0",
     "antd": "^5.19.0",
     "async-validator": "^4.2.5",
