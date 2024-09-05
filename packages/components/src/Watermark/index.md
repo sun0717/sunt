@@ -1,12 +1,26 @@
 ---
+group:
+  title: 反馈
+  order: 0
 nav:
-  title: Components
+  title: 组件
   path: /components
 ---
 
-## Watermark
+# Watermark 水印
+
+给页面的某个区域加上水印。
+
+## 何时使用
+
+页面需要添加水印标识版权时使用。
+适用于防止信息盗用。
 
 ```tsx
+/**
+ * title: 多行水印
+ * description: 通过 content 设置 字符串数组 指定多行文字水印内容。
+ */
 import React from 'react';
 import { Watermark } from '@sunt-ui/components';
 
@@ -68,3 +82,12 @@ export default () => {
   );
 };
 ```
+
+## API
+
+| Name      | Description                              | Type                | Default                |
+| --------- | ---------------------------------------- | ------------------- | ---------------------- |
+| content   | 水印文字内容                             | `string / string[]` | `--`                   |
+| gap       | 水印之间间距                             | `[number, number]`  | `[100, 100]`           |
+| offset    | 水印距离容器左上角的偏移量，默认为 gap/2 | `[number, number]`  | `[gap[0]/2, gap[1]/2]` |
+| fontStyle | 文字样式                                 | `Font`              | `Font`                 |

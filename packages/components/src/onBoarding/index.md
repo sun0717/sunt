@@ -1,10 +1,13 @@
 ---
+group:
+  title: 数据展示
+  order: 1
 nav:
-  title: Components
+  title: 组件
   path: /components
 ---
 
-## onBoarding
+# onBoarding 漫游式引导
 
 ```tsx
 import { OnBoarding } from '@sunt-ui/components';

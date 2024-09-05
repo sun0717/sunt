@@ -1,10 +1,13 @@
 ---
+group:
+  title: 反馈
+  order: 1
 nav:
-  title: Components
+  title: 组件
   path: /components
 ---
 
-## Message
+# Message 全局提示
 
 ```tsx
 import { ConfigProvider } from './ConfigProvider';

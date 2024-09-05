@@ -15,8 +15,16 @@ interface ButtonProps {
 }
 
 export default (props: ButtonProps) => {
-  const { type, disabled, icon, text, children, className, style, onClick } =
-    props;
+  const {
+    type = 'default',
+    disabled,
+    icon,
+    text,
+    children,
+    className,
+    style,
+    onClick,
+  } = props;
 
   const prefix = 'sunt-';
   const btnPrefix = prefix + 'btn';

@@ -1,12 +1,26 @@
 ---
+group:
+  title: 数据录入
+  order: 0
 nav:
-  title: Components
+  title: 组件
   path: /components
 ---
 
-## Form
+# Form 表单
+
+## 何时使用
+
+- 用于创建一个实体或收集信息。
+- 需要对输入的数据类型进行校验时。
+
+## 代码演示
 
 ```tsx
+/**
+ * title: 基本使用
+ * description: 基本的表单数据域控制展示，包含布局、初始化、验证、提交。
+ */
 import React from 'react';
 import { Button, Checkbox, Input } from 'antd';
 import { Form } from '@sunt-ui/components';
