@@ -1,6 +1,14 @@
 import { defineConfig } from 'dumi';
 import { join } from 'path';
-const basePath = '/docs/';
+
+let base: string | undefined;
+let publicPath: string | undefined;
+// const basePath = '/docs/';
+
+if (process.env.PREVIEW !== '1') {
+  base = '/sunt/';
+  publicPath = '/sunt/';
+}
 
 export default defineConfig({
   outputPath: 'docs-dist',
@@ -19,15 +27,17 @@ export default defineConfig({
       {
         title: 'hooks',
         link: '/hooks',
-      }
+      },
     ],
     prefersColor: { default: 'light', switch: true }, //主题色
     socialLinks: {
       github: 'https://github.com/sun0717',
     },
   },
-  base: basePath,
-  publicPath: basePath,
+  // base: basePath,
+  base,
+  // publicPath: basePath,
+  publicPath,
   hash: true, //文档包名是否生成hash，防止浏览器缓存
   //解析目录
   resolve: {
