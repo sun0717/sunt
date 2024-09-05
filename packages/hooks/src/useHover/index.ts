@@ -16,11 +16,7 @@ const useHover = (element: Element): [React.ReactElement, boolean] => {
   };
   /* eslint-disable no-param-reassign */
   if (typeof element === 'function') {
-    try {
-      element = element(state);
-    } catch (error) {
-      console.log('Error executing element function:', error);
-    }
+    element = element(state);
   }
   /* eslint-enable no-param-reassign */
 

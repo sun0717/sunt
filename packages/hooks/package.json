@@ -1,6 +1,6 @@
 {
-  "name": "@sunt-ui/components",
-  "version": "1.0.0",
+  "name": "@sunt-ui/hooks",
+  "version": "1.0.1",
   "private": false,
   "description": "A react library developed with dumi",
   "license": "MIT",
