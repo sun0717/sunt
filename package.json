@@ -11,7 +11,7 @@
   "scripts": {
     "build": "father build",
     "build:watch": "father dev",
-    "deploy": "rimraf node_modules/.cache/gh-pages && pnpm build:docs && gh-pages -d docs-dist",
+    "deploy": "rimraf node_modules/.cache/gh-pages && pnpm docs:build && gh-pages -d docs-dist",
     "dev": "dumi dev",
     "docs:build": "dumi build",
     "docs:preview": "dumi preview",
@@ -78,6 +78,7 @@
     "react-dom": "^18.0.0",
     "react-transition-group": "^4.4.5",
     "resize-observer-polyfill": "^1.5.1",
+    "rimraf": "^6.0.1",
     "stylelint": "^14.9.1"
   },
   "peerDependencies": {
