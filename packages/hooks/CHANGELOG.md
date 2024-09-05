@@ -1,5 +1,11 @@
 # @sunt-ui/components
 
+## 0.1.1
+
+### Patch Changes
+
+- just changeset
+
 ## 0.1.0
 
 ### Minor Changes

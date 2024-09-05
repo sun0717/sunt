@@ -31,6 +31,8 @@ function useStore(defaultPosition: Position) {
 
         const position = messageProps.position || defaultPosition;
         const isTop = position.includes('top');
+        // ??  null 和 undefined 返回 two
+        // ||  先转布尔值，为 true 返回 one, 为 false 返回 two
         const messages = isTop
           ? [{ ...messageProps, id }, ...(preState[position] ?? [])]
           : [...(preState[position] ?? []), { ...messageProps, id }];
