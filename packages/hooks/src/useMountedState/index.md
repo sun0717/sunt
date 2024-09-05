@@ -2,11 +2,14 @@
 nav:
   title: Hooks
   path: /hooks
+group:
+  title: 状态
+  order: 2
 ---
 
-## useMountedState
+# useMountedState
 
-获取组件是否挂载状态
+获取组件是否挂载到 dom。
 
 ```tsx
 import { useEffect, useState } from 'react';

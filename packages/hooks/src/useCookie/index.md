@@ -2,9 +2,14 @@
 nav:
   title: Hooks
   path: /hooks
+group:
+  title: 状态
+  order: 0
 ---
 
-## useCookie
+# useCookie
+
+基于 js-cookie 方便的增删改 cookie
 
 ```tsx
 import { useEffect } from 'react';

@@ -2,9 +2,14 @@
 nav:
   title: Hooks
   path: /hooks
+group:
+  title: 状态
+  order: 4
 ---
 
-## useHover
+# useHover
+
+一个钩子，用于跟踪元素是否被悬停。
 
 ```tsx
 import { useHover } from '@sunt-ui/hooks';

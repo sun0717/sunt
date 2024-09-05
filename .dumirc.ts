@@ -25,7 +25,7 @@ export default defineConfig({
         link: '/components',
       },
       {
-        title: 'hooks',
+        title: 'Hooks',
         link: '/hooks',
       },
     ],

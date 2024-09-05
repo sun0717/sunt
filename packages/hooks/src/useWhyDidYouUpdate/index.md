@@ -2,9 +2,14 @@
 nav:
   title: Hooks
   path: /hooks
+group:
+  title: 开发
+  order: 0
 ---
 
-## useWhyDidYouUpdate
+# useWhyDidYouUpdate
+
+帮助开发人员排查导致组件重新渲染的更改。
 
 ```tsx
 import { useState } from 'react';

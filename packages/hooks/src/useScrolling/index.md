@@ -2,11 +2,14 @@
 nav:
   title: Hooks
   path: /hooks
+group:
+  title: 状态
+  order: 1
 ---
 
-## useHover
+# useScrolling
 
-使用 ref 设置需要监听的元素
+封装滚动的状态
 
 ```tsx
 import { useRef } from 'react';

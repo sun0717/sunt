@@ -2,9 +2,14 @@
 nav:
   title: Hooks
   path: /hooks
+group:
+  title: Dom
+  order: 0
 ---
 
-## useSize
+# useSize
+
+useSize 是用来获取 dom 尺寸的，并且在窗口大小改变的时候会实时返回新的尺寸
 
 ```tsx
 import { useRef } from 'react';

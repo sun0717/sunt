@@ -2,9 +2,14 @@
 nav:
   title: Hooks
   path: /hooks
+group:
+  title: Scene
+  order: 0
 ---
 
-## useCountDown
+# useCountDown
+
+用于获取年底倒计时的钩子。
 
 ```tsx
 import { useCountDown } from '@sunt-ui/hooks';
