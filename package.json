@@ -13,7 +13,7 @@
     "build:watch": "father dev",
     "deploy": "rimraf node_modules/.cache/gh-pages && pnpm docs:build && gh-pages -d docs-dist",
     "dev": "dumi dev",
-    "docs:build": "dumi build",
+    "docs:build": "rimraf docs-dist && dumi build",
     "docs:preview": "dumi preview",
     "doctor": "father doctor",
     "lint": "npm run lint:es && npm run lint:css",
