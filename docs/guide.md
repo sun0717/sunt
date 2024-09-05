@@ -11,24 +11,18 @@ nav:
 **使用 npm / yarn / pnpm 安装**
 
 ```shell
-npm install @k-maikou/perfect-design
+npm install @sunt-ui/components
+npm install @sunt-ui/hooks
 ```
 
 ```shell
-yarn add @k-maikou/perfect-design
+yarn add @sunt-ui/components
+yarn add @sunt-ui/hooks
 ```
 
 ```shell
-pnpm install @k-maikou/perfect-design
-```
-
-## 示例
-
-```js
-import Alert from '@k-maikou/perfect-design/es/alert'; // 手动按需加载 js
-import '@k-maikou/perfect-design/es/alert/style'; // 手动按需加载 less
-
-ReactDOM.render(<Alert kind="warning">这是一条警告提示</Alert>, mountNode);
+pnpm add @sunt-ui/components
+pnpm add @sunt-ui/hooks
 ```
 
 ### 自动按需加载
@@ -36,15 +30,17 @@ ReactDOM.render(<Alert kind="warning">这是一条警告提示</Alert>, mountNod
 使用 [babel-plugin-import ](https://www.npmjs.com/package/babel-plugin-import) 优化引入方式，如下：
 
 ```js
-import { Alert } from '@k-maikou/perfect-design'; // 与上述示例等价
+import { Button } from '@sunt-ui/components'; // 与上述示例等价
 
-ReactDOM.render(<Alert kind="warning">这是一条警告提示</Alert>, mountNode);
+ReactDOM.render(<Button text="普通按钮" style={{ width: 200 }} />, mountNode);
 ```
 
 安装 `babel-plugin-import`
 
 ```
+npm install babel-plugin-import --save-dev
 yarn add babel-plugin-import --dev
+pnpm add babel-plugin-import --D
 ```
 
 配置`.babelrc` 或 `babel-loader`
@@ -55,7 +51,7 @@ yarn add babel-plugin-import --dev
     [
       "import",
       {
-        "libraryName": "@k-maikou/perfect-design",
+        "libraryName": "@sunt-ui/components",
         "libraryDirectory": "esm", // default: lib
         "style": true // or 'css'
       }

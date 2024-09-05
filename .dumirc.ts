@@ -17,16 +17,16 @@ export default defineConfig({
     //头部菜单栏
     nav: [
       {
-        title: '规范',
-        link: '/spec',
+        title: '指南',
+        link: '/guide',
       },
       {
         title: '组件',
-        link: '/components',
+        link: '/components/space',
       },
       {
         title: 'Hooks',
-        link: '/hooks',
+        link: '/hooks/use-why-did-you-update',
       },
     ],
     prefersColor: { default: 'light', switch: true }, //主题色
